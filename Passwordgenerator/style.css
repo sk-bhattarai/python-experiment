@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #a8edea, #fed6e3); /* Softer gradient background */
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Softer gradient for the main container */
+    width: 30%;
+    height: 65%; /* Slightly reduced height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.main:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.firstDiv {
+    width: 100%;
+    height: 15%; /* Reduced height for the password area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+#newPass {
+    width: 90%; /* Slightly reduced width for better spacing */
+    height: 50%; /* Reduced height for the password area */
+    background: #ff9a9e; /* Softer pink background */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+#newPass:hover {
+    background: #f76c6c; /* Softer hover effect */
+    cursor: pointer;
+}
+
+/* Checkbox and Label Styling */
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Align checkbox and label vertically */
+    gap: 10px; /* Add spacing between checkbox and label */
+    margin: 10px 0; /* Add spacing between checkbox rows */
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none; /* Remove default checkbox styling */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6dd5ed; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    background: transparent; /* Transparent background initially */
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background: #6dd5ed; /* Background color when checked */
+    border-color: #2193b0; /* Border color when checked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: '\2713'; /* Checkmark symbol */
+    color: #fff; /* Checkmark color */
+    font-size: 1rem;
+    position: absolute;
+}
+
+.checkbox-container label {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.checkbox-container label:hover {
+    color: #d4f1f9; /* Brighten label color on hover */
+}
+
+/* Updated Generate Button Styling */
+#generate {
+    width: 90%; /* Slightly reduced width for better spacing */
+    height: 12%; /* Increased height for a more prominent button */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Pleasing blue gradient */
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem; /* Slightly larger font for emphasis */
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth hover effects */
+}
+
+#generate:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    background: linear-gradient(135deg, #2193b0, #6dd5ed); /* Reverse gradient on hover */
+}
+
+.chb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d4f1f9; /* Softer and more pleasing color */
+    font-size: 1.2rem; /* Slightly smaller font for better balance */
+    font-weight: 600; /* Medium weight for a clean look */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    margin: 5px 0; /* Add spacing between checkboxes */
+    cursor: pointer; /* Pointer cursor for better interactivity */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.chb:hover {
+    color: #ffffff; /* Brighten color on hover */
+}
